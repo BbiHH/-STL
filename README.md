@@ -44,3 +44,39 @@ vector<double> v3(10,8.6)
 >FALSE<br>
 >array() (一个空数组)<br>
 >$var; (一个声明了，但是没有值的变量)<br>
+
+# 迭代器
+         迭代器是一种检查容器内元素并遍历元素的数据类型。C++更趋向于使用迭代器
+         而不是下标操作，因为标准库为每一种标准容器（如vector）定义了一种迭代
+         器类型，而只用少数容器（如vector）支持下标操作访问容器元素。
+## 一、定义和初始化
+每种容器都定义了自己的迭代器类型，如vector:
+```c++
+vector<int>::iterator    iter;    //定义一个名为iter的变量
+```
+每种容器都定义了一对名为begin和en的函数，用于返回迭代器。下面对迭代器进行初始化操作：
+```c++
+vector<int>    ivec;
+vector<int>::iterator    iter1=ivec.bengin();    //将迭代器iter1初始化为指向ivec容器的第一个元素
+vector<int>::iterator   iter2=ivec.end();    //将迭代器iter2初始化为指向ivec容器的最后一个元素的下一个位置
+```
+>注意end并不指向容器的任何元素，而是`指向容器的最后元素的下一位置`，称为超出末端迭代器。如果vector为空，则begin
+>返回的迭代器和end返回的迭代器相同。一旦向上面这样定义和初始化，就相当于把该迭代器和容器进行了某种关联，就像把一
+>个指针初始化为指向某一空间地址一样。
+## 二、常用操作
+下面列出了迭代器的常用运算操作：
+```c++
+*iter                //对iter进行解引用，返回迭代器iter指向的元素的引用
+iter->men            //对iter进行解引用，获取指定元素中名为men的成员。等效于(*iter).men
+++iter                //给iter加1，使其指向容器的下一个元素
+iter++
+--iter                //给iter减1，使其指向容器的前一个元素
+iter--
+iter1==iter2        //比较两个迭代器是否相等，当它们指向同一个容器的同一个元素或者都指向同同一个容器的超出末端的下一个位置时，它们相等 
+iter1!=iter2
+```
+假设已经声明一个vector<int>的ivec容器，下面用迭代器来遍历ivec容器，把其每个元素重置为0：
+```c++
+for(vector<int>::iterator iter=ivec.begin();iter!=ivec.end();++iter)
+        *iter=0;
+```
