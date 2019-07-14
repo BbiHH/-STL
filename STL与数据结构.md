@@ -1,27 +1,27 @@
-总结——STL 常用数据结构及用法 (转载)
+* 总结——STL 常用数据结构及用法 (转载)
 https://blog.csdn.net/xp731574722/article/details/76101089
 
-三十分钟掌握STL (转载)
+* 三十分钟掌握STL (转载)
 http://net.pku.edu.cn/~yhf/UsingSTL.htm
 
-STL 的数据结构 (转载) -待总结
+* STL 的数据结构 (转载) -待总结
 https://www.jianshu.com/p/1f8329e26231
 
-Data structures and algorithms problems in C++ using STL
+* Data structures and algorithms problems in C++ using STL
 https://medium.com/@codingfreak/data-structures-and-algorithms-problems-in-c-using-stl-7900a6ddb1d4 (US)
 
-An Overview of C++ STL Containers   Phillip Johnston  Migrating from C to Cpp 
+* An Overview of C++ STL Containers   Phillip Johnston  Migrating from C to Cpp 
 https://embeddedartistry.com/blog/2017/8/2/an-overview-of-c-stl-containers
 
-c++迭代器的使用与操作 (转载)
+* c++迭代器的使用与操作 (转载)
 https://www.cnblogs.com/maluning/p/8570717.html
 https://www.cnblogs.com/xiaojianliu/articles/8990269.html
 
-数据结构之链表及其实现（C语言）：
+* 数据结构之链表及其实现（C语言）：
 https://www.jianshu.com/p/73d56c3d228c
 
-stl vector函数成员及相关解析：
+* stl vector函数成员及相关解析：
 https://blog.csdn.net/lz_obj/article/details/78972231
 
-stl vector函数成员及相关解析：
+* stl vector函数成员及相关解析：
 https://blog.csdn.net/lz_obj/article/details/78972231
